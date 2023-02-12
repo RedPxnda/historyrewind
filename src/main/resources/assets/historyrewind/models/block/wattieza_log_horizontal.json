@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "historyrewind:block/wattieza_log_top",
+    "side": "historyrewind:block/wattieza_log"
+  }
+}

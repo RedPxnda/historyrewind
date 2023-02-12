@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "historyrewind:block/stripped_wattieza_log",
+    "side": "historyrewind:block/stripped_wattieza_log"
+  }
+}
