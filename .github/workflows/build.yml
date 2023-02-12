@@ -17,7 +17,10 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x ./gradlew
     - name: Execute Gradle Build
-      run: ./gradlew build
+      uses: gradle/gradle-build-action@v2
+      with:
+        arguments: build
+        build-root-directory: build
     - name: Publish Pre Release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
@@ -25,3 +28,5 @@ jobs:
         automatic_release_tag: "latest"
         prerelease: true
         title: "Development Build"
+        files: |
+          build/*
