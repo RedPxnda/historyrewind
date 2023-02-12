@@ -2,6 +2,7 @@ name: Build and Release Project
 on:
   push:
     branches: [ "master" ]
+permissions: write-all
 jobs:
   build:
     runs-on: ubuntu-latest
