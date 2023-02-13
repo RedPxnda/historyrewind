@@ -20,7 +20,11 @@ jobs:
       uses: gradle/gradle-build-action@v2
       with:
         arguments: build
-        build-root-directory: build
+    - name: Package
+      uses: actions/upload-artifact@v3
+      with:
+        name: Package
+        path: build
     - name: Publish Pre Release
       uses: "marvinpinto/action-automatic-releases@latest"
       with:
