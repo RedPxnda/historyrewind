@@ -1,7 +1,5 @@
 name: Build and Release Project
-on:
-  push:
-    branches: [ "master" ]
+on: [ workflow_dispatch ]
 permissions: write-all
 jobs:
   build:
@@ -28,4 +26,4 @@ jobs:
         prerelease: true
         title: "Development Build"
         files: |
-          build/**
+          build/**.jar
